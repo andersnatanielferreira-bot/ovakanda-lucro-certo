@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="pt-AO">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Processo Criativo | Ovakanda · Lucro Certo</title>
+  <meta name="description" content="Os bastidores do projeto Ovakanda Lucro Certo: referências, etapas de criação, erros, falhas de gravação e tudo o que aprendemos pelo caminho.">
+  <meta name="theme-color" content="#0A0A0C">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="subpage">
+  <div class="progress" id="progress"></div>
+  <div class="cursor" id="cursor" aria-hidden="true"><span id="cursor-label"></span></div>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="nav" id="nav">
+    <a href="index.html#inicio" class="brand" aria-label="Ovakanda Lucro Certo — voltar ao início">
+      <span class="monogram"><b>L</b><i>C</i></span>
+      <span class="brand-sep"></span>
+      <span class="brand-text"><strong>OVAKANDA</strong><small>LUCRO CERTO</small></span>
+    </a>
+    <nav aria-label="Principal">
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html#sobre">Sobre</a></li>
+        <li><a href="index.html#desafios">Desafios</a></li>
+        <li><a href="index.html#simulador">Simulador</a></li>
+        <li><a href="index.html#pacotes">Pacotes</a></li>
+        <li><a href="index.html#processo">Como funciona</a></li>
+        <li><a href="processo-criativo.html" class="active" aria-current="page">Processo criativo</a></li>
+        <li><a href="index.html#contacto" class="btn btn-sm magnetic">Falar connosco</a></li>
+      </ul>
+    </nav>
+    <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span></button>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="sub-hero">
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="spot" id="spot" aria-hidden="true"></div>
+      <div class="container">
+        <a href="index.html" class="back mono" id="back-link">← Voltar ao site</a>
+        <p class="eyebrow"><span class="dot"></span> Projeto universitário · Bastidores</p>
+        <h1 class="split-lines">
+          <span class="line"><span>Processo criativo:</span></span>
+          <span class="line"><span>do rascunho ao <em>resultado.</em></span></span>
+        </h1>
+        <p class="lead fade-up">Esta página mostra o caminho real da criação do site: as referências, as decisões, as falhas de gravação e os erros que cometemos, e o que aprendemos com cada um.</p>
+        <ul class="stats sub-stats fade-up">
+          <li><strong data-count="6">0</strong><span>sites de referência</span></li>
+          <li><strong data-count="8">0</strong><span>etapas do projeto</span></li>
+          <li><strong data-count="9">0</strong><span>erros documentados</span></li>
+          <li><strong data-count="9">0</strong><span>lições aprendidas</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- REFERÊNCIAS -->
+    <section class="section">
+      <div class="container">
+        <p class="eyebrow reveal"><span class="dot"></span> 01 · Inspiração</p>
+        <h2 class="reveal">Onde fomos <em>buscar ideias</em></h2>
+        <p class="sub-intro reveal">Escolhemos seis sites pela criatividade e pelas animações. De cada um aproveitámos uma ideia e adaptámo-la à identidade da Ovakanda (preto, esmeralda, bronze e dourado).</p>
+        <div class="grid refs">
+          <a class="card spotlight reveal ref" href="https://www.speedtask.com.br/" target="_blank" rel="noopener"><span class="mono tagline">Speedtask</span><h3>Movimento contínuo</h3><p>Faixa de palavras em movimento e cartões com destaque ao passar o rato.</p><span class="go">↗</span></a>
+          <a class="card spotlight reveal ref" href="https://increase.com/" target="_blank" rel="noopener"><span class="mono tagline">Increase</span><h3>Rigor financeiro</h3><p>Painel de números, grelha discreta e tipografia mono para dar confiança.</p><span class="go">↗</span></a>
+          <a class="card spotlight reveal ref" href="https://recent.design/i/cxrtfmi-aave" target="_blank" rel="noopener"><span class="mono tagline">Recent.design</span><h3>Composição</h3><p>Hierarquia forte e blocos bem espaçados para guiar o olhar.</p><span class="go">↗</span></a>
+          <a class="card spotlight reveal ref" href="https://www.honk.me/" target="_blank" rel="noopener"><span class="mono tagline">Honk</span><h3>Brincadeira</h3><p>Micro-interações divertidas: cartões que saltam e o simulador interativo.</p><span class="go">↗</span></a>
+          <a class="card spotlight reveal ref" href="https://www.meech213.com/" target="_blank" rel="noopener"><span class="mono tagline">Meech213</span><h3>Personalidade</h3><p>Cursor personalizado e títulos grandes que entram com carácter.</p><span class="go">↗</span></a>
+          <a class="card spotlight reveal ref" href="https://www.shopify.com/editions/winter2026" target="_blank" rel="noopener"><span class="mono tagline">Shopify Editions</span><h3>Revelação ao scroll</h3><p>Grelha em "bento" e animações que aparecem à medida que se desce.</p><span class="go">↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- TIMELINE -->
+    <section class="section alt">
+      <div class="container split">
+        <div class="sticky-col">
+          <p class="eyebrow reveal"><span class="dot"></span> 02 · Etapas</p>
+          <h2 class="reveal">A linha do <em>tempo</em></h2>
+          <p class="reveal">Do conceito ao site final, passando por várias versões. Cada etapa deixou marcas (e algumas falhas).</p>
+        </div>
+        <ol class="steps tl" id="steps">
+          <span class="rail"><span id="rail-fill"></span></span>
+          <li class="step reveal"><span class="n">1</span><div><h3>Conceito e paleta</h3><p>Definimos o estilo premium e escuro, com Preto, Carvão, Esmeralda, Bronze, Dourado e Creme.</p></div></li>
+          <li class="step reveal"><span class="n">2</span><div><h3>Primeira versão</h3><p>Uma página simples com secções de serviços, pacotes e contacto.</p></div></li>
+          <li class="step reveal"><span class="n">3</span><div><h3>Redesign com referências</h3><p>Entraram as animações, o cursor, a faixa em movimento e o painel financeiro.</p></div></li>
+          <li class="step reveal"><span class="n">4</span><div><h3>Identidade visual</h3><p>Logo Ovakanda · Lucro Certo recriado em código, com monograma prateado.</p></div></li>
+          <li class="step reveal"><span class="n">5</span><div><h3>Retrato do consultor</h3><p>Fotografia integrada numa moldura em arco, depois com fundo preto.</p></div></li>
+          <li class="step reveal"><span class="n">6</span><div><h3>Versão para telemóvel</h3><p>Menu em ecrã inteiro, carrossel de pacotes e alvos de toque maiores.</p></div></li>
+          <li class="step reveal"><span class="n">7</span><div><h3>Música de fundo</h3><p>Primeiro via YouTube, depois como ficheiro local mais leve, em loop.</p></div></li>
+          <li class="step reveal"><span class="n">8</span><div><h3>Esta página</h3><p>Documentar tudo, incluindo o que correu mal.</p></div></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ERROS -->
+    <section class="section" id="erros">
+      <div class="container">
+        <p class="eyebrow reveal"><span class="dot"></span> 03 · Erros e aprendizagens</p>
+        <h2 class="reveal">O que <em>correu mal</em></h2>
+        <p class="sub-intro reveal">Errar faz parte do processo. Estes são os problemas reais que encontrámos, a causa de cada um e como os resolvemos.</p>
+
+        <div class="filters reveal" role="group" aria-label="Filtrar erros">
+          <button class="chipbtn on" data-f="all" type="button">Todos</button>
+          <button class="chipbtn" data-f="design" type="button">Design</button>
+          <button class="chipbtn" data-f="tecnico" type="button">Técnico</button>
+          <button class="chipbtn" data-f="conteudo" type="button">Conteúdo e ficheiros</button>
+        </div>
+
+        <div class="errs" id="errs">
+          <article class="card err spotlight reveal" data-cat="design">
+            <header><span class="badge-err">Erro 01</span><span class="cat">Design</span></header>
+            <h3>Foto com fundo branco num site escuro</h3>
+            <dl><dt>Problema</dt><dd>O retrato tinha fundo branco e "furava" o tema preto da página.</dd>
+            <dt>Tentativa</dt><dd>Fundir o branco com um fundo creme na moldura. Resultou, mas não era o desejado.</dd>
+            <dt>Solução</dt><dd>Trocar o fundo da própria foto por preto e guardar o original à parte.</dd></dl>
+            <p class="lesson"><b>Lição:</b> tratar as imagens antes de as pôr no design.</p>
+          </article>
+
+          <article class="card err spotlight reveal" data-cat="conteudo">
+            <header><span class="badge-err">Erro 02</span><span class="cat">Ficheiros</span></header>
+            <h3>Extensões duplicadas nos ficheiros</h3>
+            <dl><dt>Problema</dt><dd>A foto e a música não apareciam. Os ficheiros chamavam-se <code>consultor.jpg.jpeg</code> e <code>musica.mp3.mp3</code>.</dd>
+            <dt>Causa</dt><dd>O Windows esconde as extensões e acrescenta outra ao guardar.</dd>
+            <dt>Solução</dt><dd>Mostrar as extensões e renomear para o nome exato usado no código.</dd></dl>
+            <p class="lesson"><b>Lição:</b> o nome do ficheiro tem de ser igual ao do código, letra a letra.</p>
+          </article>
+
+          <article class="card err spotlight reveal" data-cat="tecnico">
+            <header><span class="badge-err">Erro 03</span><span class="cat">Técnico</span></header>
+            <h3>Vídeo do YouTube que pode não tocar</h3>
+            <dl><dt>Problema</dt><dd>O YouTube costuma bloquear vídeos incorporados quando o site é aberto diretamente do ficheiro, e a música pode ter direitos de autor.</dd>
+            <dt>Solução</dt><dd>Passar a usar um ficheiro de áudio guardado no próprio site.</dd></dl>
+            <p class="lesson"><b>Lição:</b> não depender de serviços externos para o essencial.</p>
+          </article>
+
+          <article class="card err spotlight reveal" data-cat="conteudo">
+            <header><span class="badge-err">Erro 04</span><span class="cat">Ficheiros</span></header>
+            <h3>Música de 100 MB</h3>
+            <dl><dt>Problema</dt><dd>O ficheiro de áudio era enorme para um site, sobretudo no telemóvel com dados móveis.</dd>
+            <dt>Solução</dt><dd>Cortar só o trecho necessário e exportar em MP3 de menor qualidade: ficou com cerca de 17,5 MB. O site só carrega o áudio quando toca.</dd></dl>
+            <p class="lesson"><b>Lição:</b> o peso dos ficheiros também é design.</p>
+          </article>
+
+          <article class="card err spotlight reveal" data-cat="tecnico">
+            <header><span class="badge-err">Erro 05</span><span class="cat">Técnico</span></header>
+            <h3>A música não arranca sozinha</h3>
+            <dl><dt>Problema</dt><dd>Os browsers bloqueiam som automático antes de o visitante interagir.</dd>
+            <dt>Solução</dt><dd>Arrancar no primeiro clique ou toque e manter um botão de som sempre visível.</dd></dl>
+            <p class="lesson"><b>Lição:</b> o visitante deve ter sempre o controlo do som.</p>
+          </article>
+
+          <article class="card err spotlight reveal" data-cat="tecnico">
+            <header><span class="badge-err">Erro 06</span><span class="cat">Técnico</span></header>
+            <h3>Menu de telemóvel que se desalinhava</h3>
+            <dl><dt>Problema</dt><dd>Com o efeito de vidro desfocado na barra, o menu de posição fixa passava a ser medido em relação à barra e não ao ecrã.</dd>
+            <dt>Solução</dt><dd>Posicionar o menu em relação à barra, com altura calculada para ocupar o ecrã todo.</dd></dl>
+            <p class="lesson"><b>Lição:</b> certos efeitos visuais mudam o comportamento do layout.</p>
+          </article>
+
+          <article class="card err spotlight reveal" data-cat="design">
+            <header><span class="badge-err">Erro 07</span><span class="cat">Design</span></header>
+            <h3>Campos pequenos que ampliam o ecrã</h3>
+            <dl><dt>Problema</dt><dd>No iPhone, campos de texto com letra pequena fazem o ecrã dar zoom ao escrever.</dd>
+            <dt>Solução</dt><dd>Letra de 16 px nos campos e botões com pelo menos 44 px de área de toque.</dd></dl>
+            <p class="lesson"><b>Lição:</b> pensar nos dedos, não só no rato.</p>
+          </article>
+
+          <article class="card err spotlight reveal" data-cat="conteudo">
+            <header><span class="badge-err">Erro 08</span><span class="cat">Conteúdo</span></header>
+            <h3>Logo que não pôde ser usado como ficheiro</h3>
+            <dl><dt>Problema</dt><dd>A imagem do logo enviada na conversa não podia ser guardada diretamente na pasta do projeto.</dd>
+            <dt>Solução</dt><dd>Recriar o monograma LC e o nome em código, com tipografia e degradê prateado.</dd></dl>
+            <p class="lesson"><b>Lição:</b> ter sempre os ficheiros originais dos recursos.</p>
+          </article>
+
+          <article class="card err spotlight reveal" data-cat="tecnico">
+            <header><span class="badge-err">Erro 09</span><span class="cat">Técnico</span></header>
+            <h3>Sem ferramenta para editar áudio</h3>
+            <dl><dt>Problema</dt><dd>O computador não tinha programas de edição de áudio instalados para reduzir a música automaticamente.</dd>
+            <dt>Solução</dt><dd>Cortar e comprimir o ficheiro à mão, num editor de áudio, e substituir no projeto.</dd></dl>
+            <p class="lesson"><b>Lição:</b> escolher a ferramenta certa antes de começar.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- GRAVAÇÃO -->
+    <section class="section alt" id="gravacao">
+      <div class="container">
+        <p class="eyebrow reveal"><span class="dot"></span> 04 · Bastidores</p>
+        <h2 class="reveal">Falhas de <em>gravação</em></h2>
+        <p class="sub-intro reveal">Takes repetidos, imagens tremidas, erros de fala e risos nos bastidores. Assista aos registos de vídeo reais capturados durante a produção:</p>
+        
+        <div class="vgrid">
+          <!-- VÍDEO 1 -->
+          <article class="card spotlight vcard reveal">
+            <div class="vframe">
+              <video controls preload="metadata" playsinline>
+                <source src="video1.mp4" type="video/mp4">
+                O seu navegador não suporta a reprodução deste vídeo.
+              </video>
+            </div>
+            <div class="vinfo">
+              <div class="vhead">
+                <span class="mono vbadge">Take 01</span>
+                <span class="mono vtime">00:02</span>
+              </div>
+              <h3>Falso arranque · Take 1</h3>
+              <p>Início de gravação interrompido nos primeiros segundos para acerto de posição.</p>
+            </div>
+          </article>
+
+          <!-- VÍDEO 2 -->
+          <article class="card spotlight vcard reveal">
+            <div class="vframe">
+              <video controls preload="metadata" playsinline>
+                <source src="video2.mp4" type="video/mp4">
+                O seu navegador não suporta a reprodução deste vídeo.
+              </video>
+            </div>
+            <div class="vinfo">
+              <div class="vhead">
+                <span class="mono vbadge">Take 02</span>
+                <span class="mono vtime">00:13</span>
+              </div>
+              <h3>Dicção e tom de voz · Take 2</h3>
+              <p>Teste de projeção vocal, postura corporativa e ritmo de fala.</p>
+            </div>
+          </article>
+
+          <!-- VÍDEO 3 -->
+          <article class="card spotlight vcard reveal">
+            <div class="vframe">
+              <video controls preload="metadata" playsinline>
+                <source src="video3.mp4" type="video/mp4">
+                O seu navegador não suporta a reprodução deste vídeo.
+              </video>
+            </div>
+            <div class="vinfo">
+              <div class="vhead">
+                <span class="mono vbadge">Take 03</span>
+                <span class="mono vtime">00:18</span>
+              </div>
+              <h3>Take completo · Take 3</h3>
+              <p>Gravação mais extensa com revisão de detalhes antes da aprovação.</p>
+            </div>
+          </article>
+
+          <!-- VÍDEO 4 -->
+          <article class="card spotlight vcard reveal">
+            <div class="vframe">
+              <video controls preload="metadata" playsinline>
+                <source src="video4.mp4" type="video/mp4">
+                O seu navegador não suporta a reprodução deste vídeo.
+              </video>
+            </div>
+            <div class="vinfo">
+              <div class="vhead">
+                <span class="mono vbadge">Take 04</span>
+                <span class="mono vtime">00:10</span>
+              </div>
+              <h3>Ajuste e postura · Take 4</h3>
+              <p>Último alinhamento de posicionamento e fala antes da versão final.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FERRAMENTAS -->
+    <section class="section">
+      <div class="container">
+        <p class="eyebrow reveal"><span class="dot"></span> 05 · Ferramentas</p>
+        <h2 class="reveal">Com o que <em>construímos</em></h2>
+        <ul class="tools reveal">
+          <li>HTML</li><li>CSS</li><li>JavaScript</li><li>Playfair Display</li><li>Inter</li><li>JetBrains Mono</li><li>Edição de imagem com IA</li><li>Editor de áudio</li><li>WhatsApp</li>
+        </ul>
+        <div class="cta-band reveal">
+          <h3>Pronto para ver o resultado final?</h3>
+          <a href="index.html" class="btn magnetic" id="back-cta">Voltar ao site <span class="arr">→</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-word" aria-hidden="true">PROCESSO</div>
+      <div class="footer-row">
+        <a href="index.html" class="brand"><span class="monogram"><b>L</b><i>C</i></span><span class="brand-sep"></span><span class="brand-text"><strong>OVAKANDA</strong><small>LUCRO CERTO</small></span></a>
+        <p>Projeto universitário · Consultoria online em Contabilidade, Gestão e Fiscalidade · Angola</p>
+        <small>© <span id="year"></span> Ovakanda Lucro Certo.</small>
+      </div>
+    </div>
+  </footer>
+
+  <button class="music" id="music-btn" type="button" aria-pressed="false" aria-label="Ligar música de fundo" hidden>
+    <span class="eq" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+    <span class="music-label" id="music-label">Ligar som</span>
+  </button>
+
+  <script src="processo.js"></script>
+</body>
+</html>

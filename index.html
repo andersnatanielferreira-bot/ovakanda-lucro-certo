@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="pt-AO">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ovakanda · Lucro Certo | Consultoria Online em Contabilidade, Gestão e Fiscalidade em Angola</title>
+  <meta name="description" content="Ovakanda Lucro Certo: consultoria online para micro e pequenas empresas em Angola. Formalização, fiscalidade (AGT/IVA), gestão financeira e acompanhamento mensal.">
+  <meta name="theme-color" content="#0A0A0C">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Preloader -->
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="monogram big"><b>L</b><i>C</i></div>
+    <div class="loader-count"><span id="loader-num">0</span>%</div>
+    <div class="loader-bar"><span id="loader-bar"></span></div>
+  </div>
+
+  <div class="progress" id="progress"></div>
+  <div class="cursor" id="cursor" aria-hidden="true"><span id="cursor-label"></span></div>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="nav" id="nav">
+    <a href="#inicio" class="brand" id="logo-link" aria-label="Ovakanda Lucro Certo">
+      <span class="monogram"><b>L</b><i>C</i></span>
+      <span class="brand-sep"></span>
+      <span class="brand-text"><strong>OVAKANDA</strong><small>LUCRO CERTO</small></span>
+    </a>
+    <nav aria-label="Principal">
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#desafios">Desafios</a></li>
+        <li><a href="#simulador">Simulador</a></li>
+        <li><a href="#pacotes">Pacotes</a></li>
+        <li><a href="#processo">Como funciona</a></li>
+        <li><a href="#videos">Vídeos</a></li>
+        <li><a href="processo-criativo.html" id="nav-processo">Processo criativo</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contacto" class="btn btn-sm magnetic" id="nav-cta">Falar connosco</a></li>
+      </ul>
+    </nav>
+    <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span></button>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="spot" id="spot" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="dot"></span> Consultoria online · Angola</p>
+          <h1 class="split-lines" id="hero-title">
+            <span class="line"><span>O lucro do seu</span></span>
+            <span class="line"><span>negócio começa</span></span>
+            <span class="line"><span>nas <em>contas certas.</em></span></span>
+          </h1>
+          <p class="lead fade-up">Desmistificamos a burocracia fiscal e a gestão financeira para que micro e pequenas empresas angolanas se formalizem, cumpram com a AGT e cresçam com segurança.</p>
+          <div class="hero-actions fade-up">
+            <a href="#simulador" class="btn magnetic" id="hero-cta" data-cursor="Testar">Simular o meu lucro <span class="arr">→</span></a>
+            <a href="#pacotes" class="btn btn-ghost magnetic" id="hero-cta-2">Ver pacotes</a>
+          </div>
+        </div>
+
+        <div class="hero-visual fade-up" id="tilt-wrap">
+          <div class="dash tilt" id="dash">
+            <div class="dash-top">
+              <span class="dots"><i></i><i></i><i></i></span>
+              <span class="mono">painel · exemplo ilustrativo</span>
+            </div>
+            <div class="dash-kpi">
+              <small>Lucro líquido do mês</small>
+              <strong>Kz <span data-count="2480000">0</span></strong>
+              <span class="chip up">▲ <span data-count="18">0</span>% vs mês anterior</span>
+            </div>
+            <svg class="chart" viewBox="0 0 400 140" preserveAspectRatio="none" aria-hidden="true">
+              <defs>
+                <linearGradient id="g1" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#C9A26B" stop-opacity=".35"/><stop offset="1" stop-color="#C9A26B" stop-opacity="0"/></linearGradient>
+                <linearGradient id="g2" x1="0" x2="1"><stop offset="0" stop-color="#7A5530"/><stop offset="1" stop-color="#E8CFA3"/></linearGradient>
+              </defs>
+              <path class="area" d="M0 120 C50 110 60 90 100 95 S160 60 200 70 S270 30 310 40 S370 15 400 10 L400 140 L0 140Z" fill="url(#g1)"/>
+              <path class="line-draw" d="M0 120 C50 110 60 90 100 95 S160 60 200 70 S270 30 310 40 S370 15 400 10" fill="none" stroke="url(#g2)" stroke-width="3" stroke-linecap="round"/>
+            </svg>
+            <div class="dash-row">
+              <div><small>Receitas</small><b>Kz 6,1M</b></div>
+              <div><small>Despesas</small><b>Kz 3,6M</b></div>
+              <div><small>IVA a pagar</small><b>Kz 412K</b></div>
+            </div>
+          </div>
+          <div class="float-card f1 tilt-child"><span class="ico ok">✓</span><div><b>AGT em dia</b><small>Prazo cumprido</small></div></div>
+          <div class="float-card f2 tilt-child"><span class="ico">⏱</span><div><b>Próx. declaração</b><small>em 6 dias</small></div></div>
+        </div>
+      </div>
+      <div class="scroll-hint" aria-hidden="true"><span></span> scroll</div>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>AGT</span><span class="sep">✦</span><span>IVA 14%</span><span class="sep">✦</span><span>Fluxo de caixa</span><span class="sep">✦</span><span>Formalização</span><span class="sep">✦</span><span>Imposto Industrial</span><span class="sep">✦</span><span>Gestão financeira</span><span class="sep">✦</span><span>100% online</span><span class="sep">✦</span><span>Kwanzas</span><span class="sep">✦</span>
+        <span>AGT</span><span class="sep">✦</span><span>IVA 14%</span><span class="sep">✦</span><span>Fluxo de caixa</span><span class="sep">✦</span><span>Formalização</span><span class="sep">✦</span><span>Imposto Industrial</span><span class="sep">✦</span><span>Gestão financeira</span><span class="sep">✦</span><span>100% online</span><span class="sep">✦</span><span>Kwanzas</span><span class="sep">✦</span>
+      </div>
+    </div>
+
+    <!-- SOBRE -->
+    <section class="section about" id="sobre">
+      <div class="container">
+        <p class="eyebrow reveal"><span class="dot"></span> Sobre nós</p>
+        <p class="scrub" id="scrub">A Ovakanda Lucro Certo é uma consultoria online de contabilidade, gestão e fiscalidade. Acreditamos que menos burocracia significa mais sustentabilidade, e que cada empreendedor angolano merece clareza total sobre os números do seu negócio.</p>
+        <div class="founder" id="consultor">
+          <figure class="portrait reveal" id="portrait">
+            <div class="arch">
+              <img src="consultor.jpg" alt="Consultor da Ovakanda Lucro Certo, de fato cinzento e braços cruzados, a sorrir" width="1024" height="924" loading="lazy" onerror="this.closest('.founder').classList.add('no-photo')">
+            </div>
+            <span class="ring" aria-hidden="true"></span>
+            <div class="float-card pf1"><span class="ico ok">✓</span><div><b>Atendimento online</b><small>Em todo o país</small></div></div>
+            <div class="float-card pf2"><span class="ico">Kz</span><div><b>Feito para Angola</b><small>Contas claras</small></div></div>
+          </figure>
+          <div class="founder-copy reveal">
+            <span class="mono tagline">A pessoa por trás dos números</span>
+            <h3>Fala consigo de forma <em>simples e direta.</em></h3>
+            <p>Sem jargão e sem complicações. Cada conversa começa por perceber o seu negócio, para que a contabilidade, os impostos e a gestão trabalhem a seu favor.</p>
+            <a href="#contacto" class="btn btn-sm magnetic" id="founder-cta">Marcar conversa <span class="arr">→</span></a>
+          </div>
+        </div>
+        <div class="mv">
+          <article class="card reveal spotlight"><span class="mono tagline">01 · Missão</span><h3>Simplificar o que parece complicado</h3><p>Simplificar a burocracia fiscal e dar a cada empreendedor clareza sobre os números do seu negócio.</p></article>
+          <article class="card reveal spotlight"><span class="mono tagline">02 · Visão</span><h3>Ser a referência acessível</h3><p>Ser a referência em consultoria acessível, fomentando a formalização e a sobrevivência das pequenas empresas.</p></article>
+        </div>
+        <ul class="stats">
+          <li class="reveal"><strong data-count="4">0</strong><span>pacotes de serviço</span></li>
+          <li class="reveal"><strong><span data-count="100">0</span>%</strong><span>online, onde estiver</span></li>
+          <li class="reveal"><strong>AGT</strong><span>conformidade fiscal</span></li>
+          <li class="reveal"><strong>Kz</strong><span>pensado para Angola</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- DESAFIOS (bento) -->
+    <section class="section alt" id="desafios">
+      <div class="container">
+        <p class="eyebrow reveal"><span class="dot"></span> Desafios que resolvemos</p>
+        <h2 class="reveal">Reconhece alguma<br>destas <em>situações?</em></h2>
+        <div class="bento">
+          <article class="card spotlight b1 reveal"><span class="num">01</span><h3>“Não sei por onde começar”</h3><p>Ideia de negócio sem estrutura, sem formalização e sem plano.</p><div class="deco rocket" aria-hidden="true">↗</div></article>
+          <article class="card spotlight b2 reveal"><span class="num">02</span><h3>“Tenho medo dos impostos”</h3><p>Dúvidas sobre IVA, regime de enquadramento e obrigações declarativas.</p>
+            <div class="fear" aria-hidden="true"><span>IVA</span><span>AGT</span><span>Prazos</span><span>Multas?</span></div></article>
+          <article class="card spotlight b3 reveal"><span class="num">03</span><h3>“Vendo, mas não sobra dinheiro”</h3><p>Falta de controlo de custos, fluxo de caixa e preços.</p>
+            <div class="bars" aria-hidden="true"><i style="--h:30%"></i><i style="--h:55%"></i><i style="--h:40%"></i><i style="--h:75%"></i><i style="--h:60%"></i><i style="--h:90%"></i></div></article>
+          <article class="card spotlight b4 reveal"><span class="num">04</span><h3>“O negócio não cresce”</h3><p>Sem acompanhamento nem indicadores para decidir bem.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SIMULADOR -->
+    <section class="section sim" id="simulador">
+      <div class="container">
+        <p class="eyebrow reveal"><span class="dot"></span> Simulador interativo</p>
+        <h2 class="reveal">Quanto sobra <em>de verdade</em><br>no seu negócio?</h2>
+        <div class="sim-box reveal">
+          <div class="sim-controls">
+            <div class="ctrl">
+              <label for="s-fat">Faturação mensal <b id="o-fat" class="mono">Kz 1.500.000</b></label>
+              <input type="range" id="s-fat" min="100000" max="20000000" step="50000" value="1500000">
+            </div>
+            <div class="ctrl">
+              <label for="s-custo">Custos mensais (% da faturação) <b id="o-custo" class="mono">70%</b></label>
+              <input type="range" id="s-custo" min="10" max="120" step="1" value="70">
+            </div>
+            <p class="small">Valores meramente indicativos. Serve para ter uma ideia rápida, a análise real faz-se com os seus dados.</p>
+          </div>
+          <div class="sim-out">
+            <div class="gauge">
+              <svg viewBox="0 0 200 110" aria-hidden="true">
+                <path d="M15 100 A85 85 0 0 1 185 100" fill="none" stroke="rgba(255,255,255,.08)" stroke-width="14" stroke-linecap="round"/>
+                <path id="gauge-arc" d="M15 100 A85 85 0 0 1 185 100" fill="none" stroke="url(#gg)" stroke-width="14" stroke-linecap="round" pathLength="100" stroke-dasharray="0 100"/>
+                <defs><linearGradient id="gg" x1="0" x2="1"><stop offset="0" stop-color="#7A5530"/><stop offset="1" stop-color="#E8CFA3"/></linearGradient></defs>
+              </svg>
+              <div class="gauge-val"><strong id="o-margem">30%</strong><small>margem de lucro</small></div>
+            </div>
+            <ul class="sim-rows">
+              <li><span>Lucro estimado / mês</span><b id="o-lucro" class="mono">Kz 450.000</b></li>
+              <li><span>IVA liquidado estimado (14%)</span><b id="o-iva" class="mono">Kz 210.000</b></li>
+            </ul>
+            <div class="verdict" id="o-verdict"></div>
+            <a href="#contacto" class="btn magnetic" id="sim-cta" data-pkg-link>Quero ajuda com isto</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PACOTES -->
+    <section class="section alt" id="pacotes">
+      <div class="container">
+        <p class="eyebrow reveal"><span class="dot"></span> Os nossos pacotes</p>
+        <h2 class="reveal">Do primeiro passo ao<br><em>crescimento contínuo</em></h2>
+        <div class="grid four packages">
+          <article class="card pkg spotlight reveal">
+            <span class="tag">Fundação</span><h3>Começar Certo</h3>
+            <p>Para quem tem a ideia e precisa de a estruturar e formalizar corretamente.</p>
+            <ul><li>Orientação de formalização</li><li>Estrutura inicial do negócio</li><li>Checklist de arranque</li></ul>
+            <a href="#contacto" class="btn btn-ghost btn-sm" data-pkg="Começar Certo">Quero este</a>
+          </article>
+          <article class="card pkg spotlight reveal">
+            <span class="tag">Conformidade</span><h3>Fiscal Seguro</h3>
+            <p>Clareza sobre impostos e obrigações perante a AGT, sem sustos.</p>
+            <ul><li>Enquadramento fiscal</li><li>Explicação de IVA e obrigações</li><li>Calendário de prazos</li></ul>
+            <a href="#contacto" class="btn btn-ghost btn-sm" data-pkg="Fiscal Seguro">Quero este</a>
+          </article>
+          <article class="card pkg spotlight reveal">
+            <span class="tag">Organização</span><h3>Gestão Organizada</h3>
+            <p>Controlo financeiro simples para saber onde está o dinheiro.</p>
+            <ul><li>Controlo de receitas e despesas</li><li>Fluxo de caixa</li><li>Ferramentas e painéis prontos</li></ul>
+            <a href="#contacto" class="btn btn-ghost btn-sm" data-pkg="Gestão Organizada">Quero este</a>
+          </article>
+          <article class="card pkg featured spotlight reveal">
+            <span class="badge">Mais completo</span>
+            <span class="tag">Recorrente</span><h3>Negócio Vivo</h3>
+            <p>Acompanhamento mensal contínuo para decidir com números e crescer.</p>
+            <ul><li>Reunião mensal de alinhamento</li><li>Apoio em dúvidas fiscais</li><li>Indicadores e recomendações</li></ul>
+            <a href="#contacto" class="btn btn-sm" data-pkg="Negócio Vivo">Quero este</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESSO -->
+    <section class="section process" id="processo">
+      <div class="container split">
+        <div class="sticky-col">
+          <p class="eyebrow reveal"><span class="dot"></span> Como funciona</p>
+          <h2 class="reveal">Simples, à distância e <em>sem complicações</em></h2>
+          <p class="reveal">Do primeiro contacto ao acompanhamento mensal, tudo por videochamada e com entregáveis práticos.</p>
+        </div>
+        <ol class="steps" id="steps">
+          <span class="rail"><span id="rail-fill"></span></span>
+          <li class="step reveal"><span class="n">1</span><div><h3>Conversa inicial</h3><p>Percebemos o seu negócio e as suas maiores dúvidas.</p></div></li>
+          <li class="step reveal"><span class="n">2</span><div><h3>Escolha do pacote</h3><p>Indicamos o serviço que faz sentido para a sua fase.</p></div></li>
+          <li class="step reveal"><span class="n">3</span><div><h3>Sessões online</h3><p>Trabalhamos por videochamada, com entregáveis práticos.</p></div></li>
+          <li class="step reveal"><span class="n">4</span><div><h3>Acompanhamento</h3><p>Se quiser, continuamos a seu lado todos os meses.</p></div></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section alt" id="faq">
+      <div class="container split">
+        <div class="reveal">
+          <p class="eyebrow"><span class="dot"></span> Perguntas frequentes</p>
+          <h2>Dúvidas<br>comuns</h2>
+        </div>
+        <div class="faq">
+          <details class="reveal"><summary>O atendimento é mesmo todo online?</summary><p>Sim. Trabalhamos por videochamada e WhatsApp, o que permite atender empreendedores em qualquer província de Angola.</p></details>
+          <details class="reveal"><summary>Preciso de ter a empresa formalizada para começar?</summary><p>Não. O pacote Começar Certo existe precisamente para orientar quem ainda está a dar os primeiros passos.</p></details>
+          <details class="reveal"><summary>Vão tratar das minhas obrigações com a AGT?</summary><p>Explicamos o seu enquadramento, o IVA e os prazos, para que saiba exatamente o que cumprir e quando.</p></details>
+          <details class="reveal"><summary>Posso mudar de pacote mais tarde?</summary><p>Claro. Muitos clientes começam por um pacote pontual e passam depois ao acompanhamento mensal Negócio Vivo.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <!-- BASTIDORES & VÍDEOS -->
+    <section class="section alt" id="videos">
+      <div class="container">
+        <p class="eyebrow reveal"><span class="dot"></span> Bastidores do projeto</p>
+        <h2 class="reveal">Falhas de <em>gravação</em></h2>
+        <p class="lead reveal" style="margin-bottom: 2.2rem;">Veja os takes reais gravados para este projeto universitário:</p>
+        
+        <div class="vgrid">
+          <!-- VÍDEO 1 -->
+          <article class="card spotlight vcard reveal">
+            <div class="vframe">
+              <video controls preload="metadata" playsinline>
+                <source src="video1.mp4" type="video/mp4">
+                O seu navegador não suporta a reprodução deste vídeo.
+              </video>
+            </div>
+            <div class="vinfo">
+              <div class="vhead">
+                <span class="mono vbadge">Take 01</span>
+                <span class="mono vtime">00:02</span>
+              </div>
+              <h3>Falso arranque · Take 1</h3>
+              <p>Início de gravação interrompido nos primeiros segundos para acerto de posição.</p>
+            </div>
+          </article>
+
+          <!-- VÍDEO 2 -->
+          <article class="card spotlight vcard reveal">
+            <div class="vframe">
+              <video controls preload="metadata" playsinline>
+                <source src="video2.mp4" type="video/mp4">
+                O seu navegador não suporta a reprodução deste vídeo.
+              </video>
+            </div>
+            <div class="vinfo">
+              <div class="vhead">
+                <span class="mono vbadge">Take 02</span>
+                <span class="mono vtime">00:13</span>
+              </div>
+              <h3>Dicção e tom de voz · Take 2</h3>
+              <p>Teste de projeção vocal, postura corporativa e ritmo de fala.</p>
+            </div>
+          </article>
+
+          <!-- VÍDEO 3 -->
+          <article class="card spotlight vcard reveal">
+            <div class="vframe">
+              <video controls preload="metadata" playsinline>
+                <source src="video3.mp4" type="video/mp4">
+                O seu navegador não suporta a reprodução deste vídeo.
+              </video>
+            </div>
+            <div class="vinfo">
+              <div class="vhead">
+                <span class="mono vbadge">Take 03</span>
+                <span class="mono vtime">00:18</span>
+              </div>
+              <h3>Take completo · Take 3</h3>
+              <p>Gravação mais extensa com revisão de detalhes antes da aprovação.</p>
+            </div>
+          </article>
+
+          <!-- VÍDEO 4 -->
+          <article class="card spotlight vcard reveal">
+            <div class="vframe">
+              <video controls preload="metadata" playsinline>
+                <source src="video4.mp4" type="video/mp4">
+                O seu navegador não suporta a reprodução deste vídeo.
+              </video>
+            </div>
+            <div class="vinfo">
+              <div class="vhead">
+                <span class="mono vbadge">Take 04</span>
+                <span class="mono vtime">00:10</span>
+              </div>
+              <h3>Ajuste e postura · Take 4</h3>
+              <p>Último alinhamento de posicionamento e fala antes da versão final.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="section contact" id="contacto">
+      <div class="container">
+        <h2 class="mega reveal">Vamos pôr as suas<br>contas no <em>caminho certo?</em></h2>
+        <div class="split">
+          <div class="reveal">
+            <p class="lead">Conte-nos sobre o seu negócio e respondemos com o melhor caminho para si.</p>
+            <a class="wa-link magnetic" id="wa-big" href="#contacto" data-cursor="Olá">Falar no WhatsApp <span class="arr">↗</span></a>
+          </div>
+          <form class="form reveal" id="contact-form" novalidate>
+            <label for="nome">Nome</label>
+            <input id="nome" name="nome" type="text" required autocomplete="name">
+            <label for="telefone">Telefone / WhatsApp</label>
+            <input id="telefone" name="telefone" type="tel" autocomplete="tel" placeholder="+244">
+            <label for="pacote">Pacote de interesse</label>
+            <select id="pacote" name="pacote">
+              <option>Ainda não sei</option><option>Começar Certo</option><option>Fiscal Seguro</option><option>Gestão Organizada</option><option>Negócio Vivo</option>
+            </select>
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" rows="4"></textarea>
+            <button type="submit" class="btn magnetic" id="submit-btn">Enviar pedido</button>
+            <p class="form-msg" id="form-msg" role="status"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-word" aria-hidden="true">OVAKANDA</div>
+      <div class="footer-row">
+        <a href="#inicio" class="brand"><span class="monogram"><b>L</b><i>C</i></span><span class="brand-sep"></span><span class="brand-text"><strong>OVAKANDA</strong><small>LUCRO CERTO</small></span></a>
+        <p>Consultoria online em Contabilidade, Gestão e Fiscalidade · Angola</p>
+        <small>© <span id="year"></span> Ovakanda Lucro Certo. Todos os direitos reservados. · <a href="processo-criativo.html" class="foot-link" id="foot-processo">Processo criativo</a></small>
+      </div>
+    </div>
+  </footer>
+
+  <a class="wa-float" id="wa-float" href="#contacto" aria-label="Falar no WhatsApp"><svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true"><path d="M20.5 3.5A11 11 0 0 0 3.2 17.4L2 22l4.7-1.2A11 11 0 1 0 20.5 3.5zM12 20a9 9 0 0 1-4.6-1.3l-.3-.2-2.8.7.8-2.7-.2-.3A9 9 0 1 1 12 20zm5-6.7c-.3-.1-1.6-.8-1.8-.9s-.4-.1-.6.1-.7.9-.8 1-.3.2-.6 0a7.400 7.400 0 0 1-3.700-3.200c-.3-.5.3-.5.8-1.500a.5.5 0 0 0 0-.5l-.8-1.900c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.200 5.200 5.200 0 0 0 1.100 2.800 11.900 11.900 0 0 0 4.600 4c1.700.7 2.400.8 3.200.7a2.700 2.700 0 0 0 1.800-1.300 2.200 2.200 0 0 0 .2-1.300c-.1-.1-.3-.2-.6-.3z"/></svg></a>
+
+  <button class="music" id="music-btn" type="button" aria-pressed="false" aria-label="Ligar música de fundo" hidden>
+    <span class="eq" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+    <span class="music-label" id="music-label">Música</span>
+  </button>
+  <div class="yt-hidden" aria-hidden="true"><div id="yt-player"></div></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
